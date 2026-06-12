@@ -1,32 +1,47 @@
 /* Universal Selector -> applies to all element */
-* { 
-    font-family: Arial, sans-serif;
+* {
+  font-family: Arial, sans-serif;
 }
 /* Element/Tag Selector */
 h2 {
-    color: darkblue;
+  color: darkblue;
+  font-size: 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 900;
 }
 /* id -> # class -> . */
 /* ID Selector */
 #heading {
-    background-color: aqua;
-    text-align: center;
+  background-color: aqua;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
 }
 /* Class Selector */
+/* RGBA Example */
+/* RGBA -> Red, Green, Blue, Alpha(0,1)-> Transparancy */
 .exercise {
-    background-color:lightgreen;
+  background-color: rgba(144, 238, 144, 1);
+  font-size: 4vw;
 }
+/* HSL Example */
+/* HSLA-> Hue, Saturation, Lightness, Alpha */
+/* 0° → Red 120° → Green 240° → Blue 360° → Red again */
 .diet {
-    background-color: lightcoral;
+  background-color: hsl(0, 78%, 72%);
 }
 #diet-list {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 /* Group Selector */
-h1, h2 {
-    padding: 10px;
+/* 10 pixels inside the element */
+h1,
+h2 {
+  padding: 10px;
 }
 /* Descendant Selector */
+/* Hexadecimal Color: #RRGGBB */
 ol li {
-    color: purple;
+  color: #800080;
 }
