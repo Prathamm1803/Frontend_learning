@@ -1,0 +1,19 @@
+/* Content -> Padding -> Border -> Margin */
+/* Shorthand Notation
+1 value  → All sides
+2 values → Vertical Horizontal
+3 values → Top Horizontal Bottom
+4 values → Top Right Bottom Left */
+.box {
+  /* border-width: 5px;
+    border-style: solid;
+    border-color: red; */
+  width: 300px;
+  height: 70px;
+  border: 3px solid red;
+  border-bottom: 2px solid greenyellow;
+  padding: 20px;
+  margin: 1.5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
