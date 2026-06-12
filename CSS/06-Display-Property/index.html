@@ -3,28 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Span vs Div</title>
+    <title>Display Property</title>
     <style>
-      .highlight {
-        color: red;
-        font-weight: bold;
-      }
       .box {
         background-color: lightblue;
+        border: 2px solid black;
         padding: 10px;
-        margin: 10px 0;
+        margin: 10px;
+      }
+      .inline {
+        display: inline;
+      }
+      .block {
+        display: block;
+      }
+      .inline-block {
+        display: inline-block;
+        width: 150px;
+        height: 80px;
+      }
+      .nobox {
+        display: none;
       }
     </style>
   </head>
   <body>
-    <h1>Span vs Div</h1>
-    <h2>Using Span</h2>
-    <p>
-      I am learning <span class="highlight">HTML</span> and
-      <span class="highlight">CSS</span>
-    </p>
-    <h2>Using Div</h2>
-    <div class="box">First Div</div>
-    <div class="box">Second Div</div>
+    <h1>Display Property Example</h1>
+
+    <h2>1. Display: Inline</h2>
+    <div class="box inline">First Div</div>
+    <div class="box inline">Second Div</div>
+
+    <hr />
+
+    <h2>2. Display: Block</h2>
+    <span class="box block">First Span</span>
+    <span class="box block">Second Span</span>
+
+    <hr />
+
+    <h2>3. Display Inline-Block</h2>
+    <div class="box inline-block">Box1</div>
+    <div class="box inline-block">Box2</div>
+
+    <hr />
+
+    <h2>4. Display None</h2>
+    <div class="box">Visible Box</div>
+    <div class="nobox">You should not see this box</div>
   </body>
 </html>
