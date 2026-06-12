@@ -1,0 +1,32 @@
+/* Universal Selector -> applies to all element */
+* { 
+    font-family: Arial, sans-serif;
+}
+/* Element/Tag Selector */
+h2 {
+    color: darkblue;
+}
+/* id -> # class -> . */
+/* ID Selector */
+#heading {
+    background-color: aqua;
+    text-align: center;
+}
+/* Class Selector */
+.exercise {
+    background-color:lightgreen;
+}
+.diet {
+    background-color: lightcoral;
+}
+#diet-list {
+    border: 2px solid black;
+}
+/* Group Selector */
+h1, h2 {
+    padding: 10px;
+}
+/* Descendant Selector */
+ol li {
+    color: purple;
+}
