@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Cascading</title>
+    <style>
+      /* universal selector */
+      * {
+        color: black;
+      }
+      /* element selector */
+      p {
+        color: blue;
+      }
+      /* class selector */
+      .text {
+        color: red;
+      }
+      /* id selector */
+      #title {
+        color: green;
+      }
+      /* later rule wins-> sames specificity */
+      h2 {
+        color: purple;
+      }
+      h2 {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Cascading Demo</h1>
+
+    <h2>Later Rule Wins</h2>
+
+    <hr />
+
+    <p>Only Element Selector Applied</p>
+
+    <p class="text">Element Selector + Class Selector</p>
+
+    <p id="title" class="text">
+      Element Selector + Class Selector + ID Selector
+    </p>
+
+    <p id="title" class="text" style="color: brown">
+      Inline CSS wins over everything
+    </p>
+  </body>
+</html>
