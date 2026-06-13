@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Units</title>
+    <style>
+      html {
+        font-size: 30px;
+      }
+      .container {
+        width: 600px;
+        border: 2px solid black;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      .px-box {
+        width: 300px;
+        background-color: lightblue;
+        padding: 10px;
+      }
+      .percent-box {
+        width: 50%;
+        background-color: lightgreen;
+        padding: 10px;
+      }
+      .em-text {
+        font-size: 2em;
+      } 
+      .rem-text {
+        font-size: 2rem;
+      }
+      .vh-box {
+        height: 30vh;
+        background-color: lightcoral;
+        margin-top: 20px;
+      }
+      .vw-box {
+        width: 50vw;
+        background-color: lightgoldenrodyellow;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Units Demo</h1>
+
+    <h2>1. px</h2>
+    <div class="px-box">Width = 300px</div>
+
+    <hr />
+
+    <h2>2. %</h2>
+    <div class="container">
+      Parent width = 600px
+      <div class="percent-box">Width=50%</div>
+    </div>
+
+    <hr />
+
+    <h2>3. em</h2>
+    <div style="font-size: 20px">
+      Parent Font Size = 20px
+      <p class="em-text">Font Size = 2em</p>
+    </div>
+
+    <hr />
+
+    <h2>4. rem</h2>
+    <p class="rem-text">Font Size = 2rem</p>
+
+    <hr />
+
+    <h2>5. vh</h2>
+    <div class="vh-box">Height = 30vh</div>
+
+    <hr />
+
+    <h2>6. vw</h2>
+    <div class="vw-box">Width = 50vw</div>
+  </body>
+</html>
