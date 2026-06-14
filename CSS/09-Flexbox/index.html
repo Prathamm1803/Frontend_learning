@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h2 {
+        margin-top: 40px;
+      }
+
+      .container {
+        border: 3px solid black;
+        height: 300px;
+
+        display: flex;
+
+        /* Flex Direction */
+        flex-direction: row;
+
+        /* Justify Content works around Main Axis and flex direction decides Main Axis */
+        justify-content: space-evenly;
+        /* justify-content:space-between; */
+        /* justify-content:space-around; */
+
+        /* Align Items works around Cross Axis */
+        align-items: center;
+
+        /* Gap */
+        gap: 20px;
+
+        /* FLex Wrap */
+        flex-wrap: wrap;
+
+        /* Align Content */
+        align-content: center;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: lightblue;
+        border: 2px solid black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .grow1 {
+        flex-grow: 1;
+      }
+      .grow2 {
+        flex-grow: 2;
+      }
+      .basis {
+        flex-basis: 200px;
+      }
+      .shrink {
+        flex-shrink: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Properties Demo</h1>
+    <h2>Flex Conatiner</h2>
+
+    <!-- Parent-> Container, Other-Children/Items -->
+    <div class="container">
+      <div class="box grow1">Box 1</div>
+      <div class="box grow2">Box 2</div>
+      <div class="box basis">Box 3</div>
+      <div class="box shrink">Box 4</div>
+      <div class="box">Box 5</div>
+    </div>
+  </body>
+</html>
