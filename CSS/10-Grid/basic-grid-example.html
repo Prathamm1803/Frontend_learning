@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: rgb(14, 1, 80);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        font-size: 100px;
+        text-align: end;
+        font-family: Algerian, serif;
+      }
+      .container {
+        height: 900px;
+        width: 1800px;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        gap: 20px;
+      }
+      .box {
+        border: 2px solid black;
+      }
+      .box-1 {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        background-color: rgb(46, 164, 46);
+      }
+      .box-2 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: rgb(46, 164, 46);
+      }
+      .box-3 {
+        background-color: rgb(175, 17, 17);
+      }
+      .box-4 {
+        background-color: orange;
+      }
+      .box-8 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-color: rgb(46, 164, 46);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1"></div>
+      <div class="box box-2"></div>
+      <div class="box box-3"></div>
+      <div class="box box-4"></div>
+      <div class="box box-3"></div>
+      <div class="box box-3"></div>
+      <div class="box box-4"></div>
+      <div class="box box-8"></div>
+    </div>
+    <h1>CSS GRID</h1>
+  </body>
+</html>
