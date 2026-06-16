@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 20px 0 10px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.grid {
+  display: grid;
+  gap: 15px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.box {
+  background-color: lightblue;
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 1. Basic Grid */
+.basic-grid {
+  /* number of coloumns */
+  grid-template-columns: 150px 150px 150px;
+}
+
+/* 2. Fraction Units -> creates equal width coloumns */
+/* counters problem of overflowing */
+.fr-grid {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+/* 3. Grid Rows */
+.row-grid {
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: 100px 100px;
+}
+
+/* 4. Repeat Function */
+.repeat-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* 5. Coloumn Span */
+.span-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+/* 6. Row Span */
+.row-span-grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px);
+}
+
+.row-span {
+  grid-row: span 2;
+}
