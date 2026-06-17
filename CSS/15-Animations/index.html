@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 40px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: lightblue;
+        border: 2px solid black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /*1. Basic Animation */
+      .basic {
+        animation: move 2s forwards;
+      }
+      /*2. Infinite  */
+      .infinite {
+        animation: move 2s infinite;
+      }
+      /* 3. Delay */
+      .delay {
+        animation: move 2s 1s infinite;
+      }
+      /* 4. Direction */
+      .alternate {
+        animation: move 2s infinite alternate;
+      }
+      /* 5. Timing Function */
+      .ease {
+        animation: move 2s ease-in-out infinite;
+      }
+      /* 6 Fill Mode */
+      .fill {
+        animation: grow 2s forwards;
+      }
+      @keyframes move {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(200px);
+        }
+      }
+      @keyframes grow {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animation Properties</h1>
+    <div class="box basic">Basic</div>
+    <div class="box infinite">Infinite</div>
+    <div class="box delay">Delay</div>
+    <div class="box alternate">Alternate</div>
+    <div class="box ease">Ease In Out</div>
+    <div class="box fill">Forwards</div>
+  </body>
+</html>
