@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transitions</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 40px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+      .box {
+        width: 200px;
+        height: 100px;
+
+        background-color: lightblue;
+        border: 2px solid black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+        transition: all 0.5s ease;
+      }
+      /* Color Transition */
+      .color:hover {
+        background-color: lightcoral;
+      }
+      /* Size Transition */
+      .scale:hover {
+        transform: scale(1.5);
+      }
+      /* Rotate Transition */
+      .rotate:hover {
+        transform: rotate(15deg);
+      }
+      /* Shadow Transition */
+      .shadow:hover {
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="margin-bottom: 20px; font-size: 40px; font-weight: bold">
+      CSS Transition Examples
+    </h1>
+    <div class="box color">Color Change</div>
+    <div class="box scale">Scale Effect</div>
+    <div class="box rotate">Rotate Effect</div>
+    <div class="box shadow">Shadow Effect</div>
+  </body>
+</html>
