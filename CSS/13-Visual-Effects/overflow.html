@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .box {
+        width: 300px;
+        height: 100px;
+        border: 2px solid black;
+
+        margin-bottom: 30px;
+        padding: 10px;
+      }
+      .visible {
+        overflow: visible;
+      }
+      .hidden {
+        overflow: hidden;
+      }
+      .scroll {
+        overflow: scroll;
+      }
+      .auto {
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="margin-bottom: 30px; font-size: 60px; text-align: center">
+      Overflow Example
+    </h1>
+    <h2>Visible</h2>
+    <div class="box visible">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non
+        labore quidem modi incidunt vero harum expedita quasi, dolore eveniet
+        nisi, esse error aspernatur veniam perspiciatis, tempore a libero ad!
+      </p>
+    </div>
+
+    <h2>Hidden</h2>
+    <div class="box hidden">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+        temporibus velit magni quae delectus dolore rem animi exercitationem,
+        sed nam dolores aliquid dignissimos ea dolorem dolorum neque minus
+        corporis ducimus.
+      </p>
+    </div>
+
+    <h2>Scroll</h2>
+    <div class="box scroll">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+        repellendus laborum reiciendis possimus, a at assumenda, nostrum
+        dignissimos nemo adipisci ut corrupti repellat vitae! Tempore magni eius
+        officia reiciendis consequatur.
+      </p>
+    </div>
+
+    <h2>Auto</h2>
+    <div class="box auto">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia alias
+        velit vero asperiores, sint incidunt odio eligendi aut qui, hic modi
+        consequuntur? Consequatur, ullam deserunt reiciendis maxime corporis
+        neque ratione?
+      </p>
+    </div>
+  </body>
+</html>
